@@ -1,0 +1,6 @@
+mont_total = float(input('"Bienvenido al calcular de propinas"\n¿Cual es el monto total a pagar?\n'))
+porc = int(input("¿Cual es el % de propina a pagar? ¿12; 15 o 20?\n"))
+pers_pag = int(input("¿cuantas personas pagaran la cuenta?\n"))
+total = ((((mont_total) * (porc)) / 100) + (mont_total)) / (pers_pag)
+total_r = "{:.2f}".format(total)
+print(f"El total a pagar por persona es de: {total_r}")
